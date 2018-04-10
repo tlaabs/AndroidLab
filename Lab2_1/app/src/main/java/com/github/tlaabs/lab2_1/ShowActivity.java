@@ -22,14 +22,14 @@ public class ShowActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
+        if(intent != null) { //checking whether intent is null.
+            Bundle bundle = intent.getExtras(); //getBundle
 
-        Bundle bundle = intent.getExtras(); //getBundle
+            String name = bundle.getString("name"); //string
+            int age = bundle.getInt("age"); //age
 
-        String name = bundle.getString("name"); //string
-        int age = bundle.getInt("age"); //age
-
-        Toast.makeText(this,"Student info : " + name + ","+age,Toast.LENGTH_SHORT).show(); //Toast
-
+            Toast.makeText(this, "Student info : " + name + "," + age, Toast.LENGTH_SHORT).show(); //Toast
+        }
 
     }
 }
