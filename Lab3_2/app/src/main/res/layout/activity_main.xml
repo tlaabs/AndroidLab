@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.tlaabs.lab3_2.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow android:gravity="center_vertical">
+            <TextView android:text="성명"/>
+            <EditText android:id="@+id/editBox"/>
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+            <TextView android:text="성별"/>
+            <RadioGroup android:orientation="horizontal"
+                android:id="@+id/gender_group"
+                >
+                <RadioButton
+                    android:id="@+id/gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남"
+                    />
+                <RadioButton
+                    android:id="@+id/gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여"
+                    />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical">
+            <TextView android:text="수신여부"/>
+            <LinearLayout android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/check_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS"
+                    />
+                <CheckBox
+                    android:id="@+id/check_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="e-mail"
+                    />
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:layout_gravity="right"
+        />
+
+</LinearLayout>

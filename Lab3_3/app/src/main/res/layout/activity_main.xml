@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.tlaabs.lab3_3.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/frag1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB 1"
+            />
+        <Button
+            android:id="@+id/frag2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB 2"
+            />
+    </LinearLayout>
+
+
+   <FrameLayout
+       android:id="@+id/framelayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       >
+
+
+   </FrameLayout>
+
+</LinearLayout>
